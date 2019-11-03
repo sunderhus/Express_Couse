@@ -6,7 +6,6 @@ const router = express.Router();
 //Retorna Json de todos os membros
 router.get('/', (req, res) => {
     res.json(members);
-
 });
 
 //Retorna Json do membro pelo id
@@ -41,10 +40,10 @@ router.post('/', (req, res) => {
     // adiciona ao array existente, nao persiste
     members.push(newMember);
     // retorna todos com o novo mebro passado.
-    res.json(members);
+    // res.json(members);
 
     //retorna ao form do template
-    // res.redirect('/');
+    res.redirect('/');
 });
 
 //Atualiza membros
