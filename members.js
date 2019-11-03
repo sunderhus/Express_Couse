@@ -12,22 +12,16 @@ const members = [{
     },
     {
         "id": "3",
-        "name": "Jhon",
+        "name": "Joao",
         "age": "23",
-        "email": "Doe@gmail.com"
+        "email": "Joao@gmail.com"
     },
     {
         "id": "4",
-        "name": "Marie",
+        "name": "maria",
         "age": "24",
-        "email": "marie@gmail.com"
-    },
-    {
-        "id": "5",
-        "name": "Ag",
-        "age": "27",
-        "email": "ag@gmail.com"
-    },
+        "email": "maria@gmail.com"
+    }
 ];
 
 module.exports = members;
