@@ -1,0 +1,29 @@
+{
+  "name": "express_course",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunderhus/Express_Couse.git"
+  },
+  "keywords": [],
+  "author": "Matheus Sunderhus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sunderhus/Express_Couse/issues"
+  },
+  "homepage": "https://github.com/sunderhus/Express_Couse#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.24.0",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  },
+  "description": "Express Course. "
+}
