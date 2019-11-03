@@ -24,7 +24,7 @@ const members = [{
     },
     {
         "id": "5",
-        "name": "Agnes",
+        "name": "Ag",
         "age": "27",
         "email": "ag@gmail.com"
     },

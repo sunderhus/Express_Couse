@@ -6,6 +6,7 @@ const router = express.Router();
 //Retorna Json de todos os membros
 router.get('/', (req, res) => {
     res.json(members);
+
 });
 
 //Retorna Json do membro pelo id
@@ -32,8 +33,6 @@ router.post('/', (req, res) => {
         email: req.body.email
     }
 
-    console.log(newMember);
-
     if (!newMember.name || !newMember.email) {
         return res.status(400).json({
             msg: `Por favor , inclua um email e nome para o novo membro.`
@@ -43,6 +42,9 @@ router.post('/', (req, res) => {
     members.push(newMember);
     // retorna todos com o novo mebro passado.
     res.json(members);
+
+    //retorna ao form do template
+    // res.redirect('/');
 });
 
 //Atualiza membros

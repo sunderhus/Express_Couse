@@ -1,0 +1,27 @@
+<h1 class="text-center mb-3">{{title}}</h1>
+<form action="/api/members" method="POST">
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" name="name" class="form-control">
+    </div>    
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" name="email" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="age">Age</label>
+        <input max="99" type="number" name="age" class="form-control col-md-3">
+    </div>
+    <div class="form-group">
+        <button type="submit" value="Cadastrar" class="btn btn-primary btn-block">Cadastrar</button>
+    </div>
+</form>
+
+<h4>Members:</h4>
+<ul class="list-group">
+    {{#each membersArray}}
+        <li class="list-group-item">{{this.name}} : {{this.email}}</li>
+    {{/each}}
+</ul>
+
+<a href="/api/members" class="btn btn-light mt-4">Use a API.</a>
