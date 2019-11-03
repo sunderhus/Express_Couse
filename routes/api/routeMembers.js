@@ -77,11 +77,14 @@ router.delete('/:id', (req, res) => {
     const found = members.some(member => member.id === req.params.id);
 
     if (found) {
+        let i = 0;
         members.forEach(member => {
+            i++;
             if (member.id === req.params.id) {
+                members.splice(0, 1);
                 res.json({
                     msg: `Membro de id${req.params.id} deletado com sucesso`,
-                    resultMembers: members.filter(member => member.id !== req.params.id)
+                    resultMembers: members
                 });
             }
         });
