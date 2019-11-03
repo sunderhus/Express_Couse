@@ -81,7 +81,7 @@ router.delete('/:id', (req, res) => {
         members.forEach(member => {
             i++;
             if (member.id === req.params.id) {
-                members.splice(0, 1);
+                members.splice(i - 1, 1);
                 res.json({
                     msg: `Membro de id${req.params.id} deletado com sucesso`,
                     resultMembers: members
