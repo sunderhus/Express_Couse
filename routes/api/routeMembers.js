@@ -79,14 +79,14 @@ router.delete('/:id', (req, res) => {
     if (found) {
         let i = 0;
         members.forEach(member => {
-            i++;
             if (member.id === req.params.id) {
-                members.splice(i - 1, 1);
+                members.splice(i, 1);
                 res.json({
                     msg: `Membro de id${req.params.id} deletado com sucesso`,
                     resultMembers: members
                 });
             }
+            i++;
         });
     } else {
         res.status(400).json({
