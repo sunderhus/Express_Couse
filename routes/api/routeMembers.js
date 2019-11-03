@@ -73,7 +73,7 @@ router.put('/:id', (req, res) => {
 
 //Deleta membro
 router.delete('/:id', (req, res) => {
-    //verifica se ja existe
+    //verifica existe alguem com este ID
     const found = members.some(member => member.id === req.params.id);
 
     if (found) {
